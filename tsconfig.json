@@ -1,0 +1,10 @@
+{
+  "extends": "lvyjs/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@src/*": ["./src/*"]
+    },
+    "noEmit": true
+  },
+  "include": ["src/**/*"]
+}

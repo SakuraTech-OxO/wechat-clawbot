@@ -1,0 +1,26 @@
+# wechat-clawbot 微信个人号适配器配置
+wechat-clawbot:
+  # iLink API 基础 URL
+  base_url: 'https://ilinkai.weixin.qq.com'
+  # CDN 基础 URL
+  cdn_base_url: 'https://novac2c.cdn.weixin.qq.com/c2c'
+  # 存储目录（用于保存凭据和上下文）
+  # storage_dir: '~/.alemonjs-wechat'
+  # 日志级别: debug, info, warn, error
+  log_level: 'info'
+  # QR 码轮询间隔（毫秒）
+  qr_poll_interval: 2000
+  # API 超时时间（毫秒）
+  api_timeout: 15000
+  # 长轮询超时时间（毫秒）
+  long_poll_timeout: 35000
+  # 自动重新登录
+  auto_relogin: true
+
+# PM2 配置
+pm2:
+  apps:
+    - name: 'zy-wechat-bot'
+      script: 'node index.js'
+      env:
+        NODE_ENV: 'production'

@@ -1,0 +1,42 @@
+{
+  "name": "@alemonjs/wechat-clawbot",
+  "version": "1.0.1",
+  "description": "微信ClawBot适配器，基于AlmonJS框架开发",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "app": "node index.js",
+    "dev": "npx lvy app.ts",
+    "view": "npx lvy app.ts --jsxp",
+    "build": "npx lvy build",
+    "review": "npx alemonc start",
+    "start": "npx pm2 startOrRestart pm2.config.cjs",
+    "stop": "npx pm2 stop pm2.config.cjs",
+    "delete": "npx pm2 delete pm2.config.cjs"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./package": "./package.json"
+  },
+  "peerDependencies": {
+    "alemonjs": ">=2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "alemonjs": "2.1.70",
+    "lvyjs": "^0.3.0-alpha.2"
+  },
+  "keywords": [
+    "alemonjs",
+    "wechat",
+    "bot",
+    "platform",
+    "adapter"
+  ],
+  "author": "SakuraTech-OxO",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}
