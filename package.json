@@ -1,6 +1,6 @@
 {
   "name": "@alemonjs/wechat-clawbot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "微信ClawBot适配器，基于AlmonJS框架开发",
   "main": "lib/index.js",
   "type": "module",
